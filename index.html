@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 01</title>
+  </head>
+  <body>
+    <h1>Questão 01</h1>
+    <h3>Tipos de Triângulos</h3>
+    <label id="l1">Primeiro Lado</label>
+    <input type="number" name="lado1" id="lado1" min="0" />
+    <label id="l2">Segundo Lado</label>
+    <input type="number" name="lado2" id="lado2" min="0" />
+    <label id="l3">Terceiro Lado</label>
+    <input type="number" name="lado3" id="lado3" min="0" />
+    <br />
+    <label>Resultado:</label>
+    <input type="text" name="resultado" id="resultado" disabled />
+    <br />
+    <button id="calcular">Mostrar Tipo de Triângulo</button>
+
+    <h1>Questão 02</h1>
+    <h3>Bhaskara</h3>
+    <label id="la">a</label>
+    <input type="number" name="a" id="a" />
+    <label id="lb">b</label>
+    <input type="number" name="b" id="b" />
+    <label id="lc">c</label>
+    <input type="number" name="c" id="c" />
+    <br />
+    <label>x1:</label>
+    <input type="text" name="resx1" id="resx1" disabled />
+    <label>x2:</label>
+    <input type="text" name="resx2" id="resx2" disabled />
+    <br />
+    <button id="calcular-bhaskara">Calcular</button>
+
+    <h1>Questão 03</h1>
+    <h3>Sistemas de Notas</h3>
+    <label id="lnota">Nota</label>
+    <input type="number" name="nota" id="nota" min="0" max="100" />
+    <br />
+    <label>Resultado:</label>
+    <input type="text" name="resultado-nota" id="resultado-nota" disabled />
+    <br />
+    <button id="calcular-nota">Calcular</button>
+
+    <h1>Questão 04</h1>
+    <h3>LuidyMoura</h3>
+    <label id="llm">Número</label>
+    <input type="number" name="luidy-moura" id="luidy-moura" />
+    <br />
+    <label>Resultado:</label>
+    <p id="resultado-lm"></p>
+    <br />
+    <button id="calcular-lm">Calcular</button>
+
+    <script src="./js/questao1.js"></script>
+    <script src="./js/questao2.js"></script>
+    <script src="./js/questao3.js"></script>
+    <script src="./js/questao4.js"></script>
+  </body>
+</html>
