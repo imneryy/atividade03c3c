@@ -20,22 +20,21 @@ const LM = (luidymoura) => {
   let resultadolm = [];
 
   for (let i = 1; i <= luidymoura; i++) {
-    if (i % 5 == 0) {
+    if (i % 5 == 0 && !(i% 9 == 0)) {
       resultadolm.push("Luidy");
     }
 
-    if (i % 9 == 0) {
+    if (i % 9 == 0 && !(i % 5 == 0)) {
       resultadolm.push("Moura");
     }
 
-    if (i % 5 == 0 && i % 9 == 0) {
+    if (i % 5 == 0 && (i % 9 == 0)) {
       resultadolm.push("LuidyMoura");
     }
 
-    if (i % 5 != 0 || i % 9 != 0) {
+    if (i % 5 !== 0 && i % 9 !== 0) {
       resultadolm.push(i);
     }
   }
-
   return resultadolm;
 };
